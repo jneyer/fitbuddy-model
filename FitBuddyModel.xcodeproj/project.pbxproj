@@ -8,8 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		D6F368E11CCC10E200DBC9F1 /* fitbuddy-model.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F368E01CCC10E200DBC9F1 /* fitbuddy-model.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6F368E81CCC10E200DBC9F1 /* fitbuddy-model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F368DD1CCC10E200DBC9F1 /* fitbuddy-model.framework */; };
-		D6F368ED1CCC10E200DBC9F1 /* fitbuddy_modelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F368EC1CCC10E200DBC9F1 /* fitbuddy_modelTests.swift */; };
+		D6F368E81CCC10E200DBC9F1 /* FitBuddyModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F368DD1CCC10E200DBC9F1 /* FitBuddyModel.framework */; };
+		D6F368ED1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F368EC1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift */; };
+		D6F369271CCC12BD00DBC9F1 /* CardioExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F369181CCC12BD00DBC9F1 /* CardioExercise.swift */; };
+		D6F369281CCC12BD00DBC9F1 /* CardioHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F369191CCC12BD00DBC9F1 /* CardioHistory.swift */; };
+		D6F369291CCC12BD00DBC9F1 /* CoreDataArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3691A1CCC12BD00DBC9F1 /* CoreDataArchive.swift */; };
+		D6F3692A1CCC12BD00DBC9F1 /* CoreDataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3691B1CCC12BD00DBC9F1 /* CoreDataConnection.swift */; };
+		D6F3692B1CCC12BD00DBC9F1 /* CoreDataHelper2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3691C1CCC12BD00DBC9F1 /* CoreDataHelper2.swift */; };
+		D6F3692C1CCC12BD00DBC9F1 /* CoreDataModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3691D1CCC12BD00DBC9F1 /* CoreDataModelManager.swift */; };
+		D6F3692D1CCC12BD00DBC9F1 /* CoreDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3691E1CCC12BD00DBC9F1 /* CoreDataType.swift */; };
+		D6F3692E1CCC12BD00DBC9F1 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3691F1CCC12BD00DBC9F1 /* Exercise.swift */; };
+		D6F369301CCC12BD00DBC9F1 /* LogbookEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F369211CCC12BD00DBC9F1 /* LogbookEntry.swift */; };
+		D6F369311CCC12BD00DBC9F1 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F369221CCC12BD00DBC9F1 /* ModelManager.swift */; };
+		D6F369321CCC12BD00DBC9F1 /* ResistanceExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F369231CCC12BD00DBC9F1 /* ResistanceExercise.swift */; };
+		D6F369331CCC12BD00DBC9F1 /* ResistanceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F369241CCC12BD00DBC9F1 /* ResistanceHistory.swift */; };
+		D6F369341CCC12BD00DBC9F1 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F369251CCC12BD00DBC9F1 /* Workout.swift */; };
+		D6F369351CCC12BD00DBC9F1 /* WorkoutSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F369261CCC12BD00DBC9F1 /* WorkoutSequence.swift */; };
+		D6F3696A1CCC154800DBC9F1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F369691CCC154800DBC9F1 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +38,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D6F368DD1CCC10E200DBC9F1 /* fitbuddy-model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "fitbuddy-model.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F368DD1CCC10E200DBC9F1 /* FitBuddyModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FitBuddyModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F368E01CCC10E200DBC9F1 /* fitbuddy-model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fitbuddy-model.h"; sourceTree = "<group>"; };
 		D6F368E21CCC10E200DBC9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6F368E71CCC10E200DBC9F1 /* fitbuddy-modelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fitbuddy-modelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6F368EC1CCC10E200DBC9F1 /* fitbuddy_modelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitbuddy_modelTests.swift; sourceTree = "<group>"; };
+		D6F368E71CCC10E200DBC9F1 /* FitBuddyModel.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBuddyModel.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F368EC1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "fitbuddy-model-tests.swift"; sourceTree = "<group>"; };
 		D6F368EE1CCC10E200DBC9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F369181CCC12BD00DBC9F1 /* CardioExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardioExercise.swift; sourceTree = "<group>"; };
+		D6F369191CCC12BD00DBC9F1 /* CardioHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardioHistory.swift; sourceTree = "<group>"; };
+		D6F3691A1CCC12BD00DBC9F1 /* CoreDataArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataArchive.swift; sourceTree = "<group>"; };
+		D6F3691B1CCC12BD00DBC9F1 /* CoreDataConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataConnection.swift; sourceTree = "<group>"; };
+		D6F3691C1CCC12BD00DBC9F1 /* CoreDataHelper2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper2.swift; sourceTree = "<group>"; };
+		D6F3691D1CCC12BD00DBC9F1 /* CoreDataModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModelManager.swift; sourceTree = "<group>"; };
+		D6F3691E1CCC12BD00DBC9F1 /* CoreDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataType.swift; sourceTree = "<group>"; };
+		D6F3691F1CCC12BD00DBC9F1 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		D6F369211CCC12BD00DBC9F1 /* LogbookEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookEntry.swift; sourceTree = "<group>"; };
+		D6F369221CCC12BD00DBC9F1 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		D6F369231CCC12BD00DBC9F1 /* ResistanceExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResistanceExercise.swift; sourceTree = "<group>"; };
+		D6F369241CCC12BD00DBC9F1 /* ResistanceHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResistanceHistory.swift; sourceTree = "<group>"; };
+		D6F369251CCC12BD00DBC9F1 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		D6F369261CCC12BD00DBC9F1 /* WorkoutSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSequence.swift; sourceTree = "<group>"; };
+		D6F369691CCC154800DBC9F1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F3696A1CCC154800DBC9F1 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F368E81CCC10E200DBC9F1 /* fitbuddy-model.framework in Frameworks */,
+				D6F368E81CCC10E200DBC9F1 /* FitBuddyModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +84,9 @@
 		D6F368D31CCC10E200DBC9F1 = {
 			isa = PBXGroup;
 			children = (
-				D6F368DF1CCC10E200DBC9F1 /* fitbuddy-model */,
-				D6F368EB1CCC10E200DBC9F1 /* fitbuddy-modelTests */,
+				D6F369741CCC1A6E00DBC9F1 /* Frameworks */,
+				D6F368DF1CCC10E200DBC9F1 /* FitBuddyModel */,
+				D6F368EB1CCC10E200DBC9F1 /* FitBuddyModelTests */,
 				D6F368DE1CCC10E200DBC9F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,28 +94,50 @@
 		D6F368DE1CCC10E200DBC9F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6F368DD1CCC10E200DBC9F1 /* fitbuddy-model.framework */,
-				D6F368E71CCC10E200DBC9F1 /* fitbuddy-modelTests.xctest */,
+				D6F368DD1CCC10E200DBC9F1 /* FitBuddyModel.framework */,
+				D6F368E71CCC10E200DBC9F1 /* FitBuddyModel.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6F368DF1CCC10E200DBC9F1 /* fitbuddy-model */ = {
+		D6F368DF1CCC10E200DBC9F1 /* FitBuddyModel */ = {
 			isa = PBXGroup;
 			children = (
+				D6F369181CCC12BD00DBC9F1 /* CardioExercise.swift */,
+				D6F369191CCC12BD00DBC9F1 /* CardioHistory.swift */,
+				D6F3691A1CCC12BD00DBC9F1 /* CoreDataArchive.swift */,
+				D6F3691B1CCC12BD00DBC9F1 /* CoreDataConnection.swift */,
+				D6F3691C1CCC12BD00DBC9F1 /* CoreDataHelper2.swift */,
+				D6F3691D1CCC12BD00DBC9F1 /* CoreDataModelManager.swift */,
+				D6F3691E1CCC12BD00DBC9F1 /* CoreDataType.swift */,
+				D6F3691F1CCC12BD00DBC9F1 /* Exercise.swift */,
+				D6F369211CCC12BD00DBC9F1 /* LogbookEntry.swift */,
+				D6F369221CCC12BD00DBC9F1 /* ModelManager.swift */,
+				D6F369231CCC12BD00DBC9F1 /* ResistanceExercise.swift */,
+				D6F369241CCC12BD00DBC9F1 /* ResistanceHistory.swift */,
+				D6F369251CCC12BD00DBC9F1 /* Workout.swift */,
+				D6F369261CCC12BD00DBC9F1 /* WorkoutSequence.swift */,
 				D6F368E01CCC10E200DBC9F1 /* fitbuddy-model.h */,
 				D6F368E21CCC10E200DBC9F1 /* Info.plist */,
 			);
-			path = "fitbuddy-model";
+			path = FitBuddyModel;
 			sourceTree = "<group>";
 		};
-		D6F368EB1CCC10E200DBC9F1 /* fitbuddy-modelTests */ = {
+		D6F368EB1CCC10E200DBC9F1 /* FitBuddyModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				D6F368EC1CCC10E200DBC9F1 /* fitbuddy_modelTests.swift */,
+				D6F368EC1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift */,
 				D6F368EE1CCC10E200DBC9F1 /* Info.plist */,
 			);
-			path = "fitbuddy-modelTests";
+			path = FitBuddyModelTests;
+			sourceTree = "<group>";
+		};
+		D6F369741CCC1A6E00DBC9F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6F369691CCC154800DBC9F1 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,9 +154,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D6F368DC1CCC10E200DBC9F1 /* fitbuddy-model */ = {
+		D6F368DC1CCC10E200DBC9F1 /* FitBuddyModel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6F368F11CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "fitbuddy-model" */;
+			buildConfigurationList = D6F368F11CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "FitBuddyModel" */;
 			buildPhases = (
 				D6F368D81CCC10E200DBC9F1 /* Sources */,
 				D6F368D91CCC10E200DBC9F1 /* Frameworks */,
@@ -113,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = "fitbuddy-model";
+			name = FitBuddyModel;
 			productName = "fitbuddy-model";
-			productReference = D6F368DD1CCC10E200DBC9F1 /* fitbuddy-model.framework */;
+			productReference = D6F368DD1CCC10E200DBC9F1 /* FitBuddyModel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D6F368E61CCC10E200DBC9F1 /* fitbuddy-modelTests */ = {
+		D6F368E61CCC10E200DBC9F1 /* FitBuddyModelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6F368F41CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "fitbuddy-modelTests" */;
+			buildConfigurationList = D6F368F41CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "FitBuddyModelTests" */;
 			buildPhases = (
 				D6F368E31CCC10E200DBC9F1 /* Sources */,
 				D6F368E41CCC10E200DBC9F1 /* Frameworks */,
@@ -131,9 +185,9 @@
 			dependencies = (
 				D6F368EA1CCC10E200DBC9F1 /* PBXTargetDependency */,
 			);
-			name = "fitbuddy-modelTests";
+			name = FitBuddyModelTests;
 			productName = "fitbuddy-modelTests";
-			productReference = D6F368E71CCC10E200DBC9F1 /* fitbuddy-modelTests.xctest */;
+			productReference = D6F368E71CCC10E200DBC9F1 /* FitBuddyModel.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D6F368D71CCC10E200DBC9F1 /* Build configuration list for PBXProject "fitbuddy-model" */;
+			buildConfigurationList = D6F368D71CCC10E200DBC9F1 /* Build configuration list for PBXProject "FitBuddyModel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,8 +220,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6F368DC1CCC10E200DBC9F1 /* fitbuddy-model */,
-				D6F368E61CCC10E200DBC9F1 /* fitbuddy-modelTests */,
+				D6F368DC1CCC10E200DBC9F1 /* FitBuddyModel */,
+				D6F368E61CCC10E200DBC9F1 /* FitBuddyModelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +248,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F369281CCC12BD00DBC9F1 /* CardioHistory.swift in Sources */,
+				D6F369331CCC12BD00DBC9F1 /* ResistanceHistory.swift in Sources */,
+				D6F369351CCC12BD00DBC9F1 /* WorkoutSequence.swift in Sources */,
+				D6F3692E1CCC12BD00DBC9F1 /* Exercise.swift in Sources */,
+				D6F369341CCC12BD00DBC9F1 /* Workout.swift in Sources */,
+				D6F369321CCC12BD00DBC9F1 /* ResistanceExercise.swift in Sources */,
+				D6F369271CCC12BD00DBC9F1 /* CardioExercise.swift in Sources */,
+				D6F3692A1CCC12BD00DBC9F1 /* CoreDataConnection.swift in Sources */,
+				D6F3692B1CCC12BD00DBC9F1 /* CoreDataHelper2.swift in Sources */,
+				D6F3692C1CCC12BD00DBC9F1 /* CoreDataModelManager.swift in Sources */,
+				D6F369301CCC12BD00DBC9F1 /* LogbookEntry.swift in Sources */,
+				D6F369311CCC12BD00DBC9F1 /* ModelManager.swift in Sources */,
+				D6F369291CCC12BD00DBC9F1 /* CoreDataArchive.swift in Sources */,
+				D6F3692D1CCC12BD00DBC9F1 /* CoreDataType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F368ED1CCC10E200DBC9F1 /* fitbuddy_modelTests.swift in Sources */,
+				D6F368ED1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +278,7 @@
 /* Begin PBXTargetDependency section */
 		D6F368EA1CCC10E200DBC9F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D6F368DC1CCC10E200DBC9F1 /* fitbuddy-model */;
+			target = D6F368DC1CCC10E200DBC9F1 /* FitBuddyModel */;
 			targetProxy = D6F368E91CCC10E200DBC9F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -310,31 +378,42 @@
 		D6F368F21CCC10E200DBC9F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "fitbuddy-model/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FitBuddyModel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.giantrobotlabs.fitbuddy-model";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.giantrobotlabs.FitBuddyModel;
+				PRODUCT_NAME = FitBuddyModel;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D6F368F31CCC10E200DBC9F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "fitbuddy-model/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FitBuddyModel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.giantrobotlabs.fitbuddy-model";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.giantrobotlabs.FitBuddyModel;
+				PRODUCT_NAME = FitBuddyModel;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -345,7 +424,7 @@
 				INFOPLIST_FILE = "fitbuddy-modelTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.giantrobotlabs.fitbuddy-modelTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FitBuddyModel;
 			};
 			name = Debug;
 		};
@@ -355,14 +434,14 @@
 				INFOPLIST_FILE = "fitbuddy-modelTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.giantrobotlabs.fitbuddy-modelTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FitBuddyModel;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6F368D71CCC10E200DBC9F1 /* Build configuration list for PBXProject "fitbuddy-model" */ = {
+		D6F368D71CCC10E200DBC9F1 /* Build configuration list for PBXProject "FitBuddyModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6F368EF1CCC10E200DBC9F1 /* Debug */,
@@ -371,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6F368F11CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "fitbuddy-model" */ = {
+		D6F368F11CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "FitBuddyModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6F368F21CCC10E200DBC9F1 /* Debug */,
@@ -379,7 +458,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		D6F368F41CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "fitbuddy-modelTests" */ = {
+		D6F368F41CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "FitBuddyModelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6F368F51CCC10E200DBC9F1 /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:fitbuddy-model.xcodeproj">
+      location = "self:/Users/jneyer/Unity/Projects/fitbuddy-model/FitBuddyModel.xcodeproj">
    </FileRef>
 </Workspace>

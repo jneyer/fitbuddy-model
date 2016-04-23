@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import fitbuddy_model
+@testable import FitBuddyModel
 
 class fitbuddy_modelTests: XCTestCase {
     
