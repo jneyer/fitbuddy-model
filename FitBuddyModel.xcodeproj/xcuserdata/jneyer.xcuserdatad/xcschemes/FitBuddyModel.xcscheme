@@ -20,6 +20,20 @@
                ReferencedContainer = "container:FitBuddyModel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D6F3693F1CCC147300DBC9F1"
+               BuildableName = "FitBuddyCommon.framework"
+               BlueprintName = "FitBuddyCommon"
+               ReferencedContainer = "container:FitBuddyCommon/FitBuddyCommon.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

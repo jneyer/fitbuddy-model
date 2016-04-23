@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61824F91CCC1F710065B16C /* FitBuddyCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61824F61CCC1F5E0065B16C /* FitBuddyCommon.framework */; };
 		D6F368E11CCC10E200DBC9F1 /* fitbuddy-model.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F368E01CCC10E200DBC9F1 /* fitbuddy-model.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6F368E81CCC10E200DBC9F1 /* FitBuddyModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F368DD1CCC10E200DBC9F1 /* FitBuddyModel.framework */; };
 		D6F368ED1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F368EC1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift */; };
@@ -28,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D61824F51CCC1F5E0065B16C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61824F01CCC1F5E0065B16C /* FitBuddyCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6F369401CCC147300DBC9F1;
+			remoteInfo = FitBuddyCommon;
+		};
+		D61824F71CCC1F5E0065B16C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61824F01CCC1F5E0065B16C /* FitBuddyCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6F3694A1CCC147300DBC9F1;
+			remoteInfo = FitBuddyCommonTests;
+		};
 		D6F368E91CCC10E200DBC9F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6F368D41CCC10E200DBC9F1 /* Project object */;
@@ -38,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D61824F01CCC1F5E0065B16C /* FitBuddyCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FitBuddyCommon.xcodeproj; path = FitBuddyCommon/FitBuddyCommon.xcodeproj; sourceTree = "<group>"; };
 		D6F368DD1CCC10E200DBC9F1 /* FitBuddyModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FitBuddyModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F368E01CCC10E200DBC9F1 /* fitbuddy-model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fitbuddy-model.h"; sourceTree = "<group>"; };
 		D6F368E21CCC10E200DBC9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61824F91CCC1F710065B16C /* FitBuddyCommon.framework in Frameworks */,
 				D6F3696A1CCC154800DBC9F1 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,9 +98,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D61824F11CCC1F5E0065B16C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D61824F61CCC1F5E0065B16C /* FitBuddyCommon.framework */,
+				D61824F81CCC1F5E0065B16C /* FitBuddyCommonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D6F368D31CCC10E200DBC9F1 = {
 			isa = PBXGroup;
 			children = (
+				D61824F01CCC1F5E0065B16C /* FitBuddyCommon.xcodeproj */,
 				D6F369741CCC1A6E00DBC9F1 /* Frameworks */,
 				D6F368DF1CCC10E200DBC9F1 /* FitBuddyModel */,
 				D6F368EB1CCC10E200DBC9F1 /* FitBuddyModelTests */,
@@ -218,6 +245,12 @@
 			mainGroup = D6F368D31CCC10E200DBC9F1;
 			productRefGroup = D6F368DE1CCC10E200DBC9F1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D61824F11CCC1F5E0065B16C /* Products */;
+					ProjectRef = D61824F01CCC1F5E0065B16C /* FitBuddyCommon.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D6F368DC1CCC10E200DBC9F1 /* FitBuddyModel */,
@@ -225,6 +258,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D61824F61CCC1F5E0065B16C /* FitBuddyCommon.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FitBuddyCommon.framework;
+			remoteRef = D61824F51CCC1F5E0065B16C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D61824F81CCC1F5E0065B16C /* FitBuddyCommonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FitBuddyCommonTests.xctest;
+			remoteRef = D61824F71CCC1F5E0065B16C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D6F368DB1CCC10E200DBC9F1 /* Resources */ = {
@@ -457,6 +507,7 @@
 				D6F368F31CCC10E200DBC9F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6F368F41CCC10E200DBC9F1 /* Build configuration list for PBXNativeTarget "FitBuddyModelTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +516,7 @@
 				D6F368F61CCC10E200DBC9F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
