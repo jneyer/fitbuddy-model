@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D61824F91CCC1F710065B16C /* FitBuddyCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61824F61CCC1F5E0065B16C /* FitBuddyCommon.framework */; };
+		D61825021CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FD1CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel */; };
+		D61825031CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FE1CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel */; };
+		D61825041CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FF1CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel */; };
+		D61825051CCC21180065B16C /* GymBuddyMappingModel1.3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61825001CCC21180065B16C /* GymBuddyMappingModel1.3.xcmappingmodel */; };
+		D61825191CCC22690065B16C /* GymBuddyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D618250D1CCC22690065B16C /* GymBuddyModel.xcdatamodeld */; };
 		D6F368E11CCC10E200DBC9F1 /* fitbuddy-model.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F368E01CCC10E200DBC9F1 /* fitbuddy-model.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6F368E81CCC10E200DBC9F1 /* FitBuddyModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F368DD1CCC10E200DBC9F1 /* FitBuddyModel.framework */; };
 		D6F368ED1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F368EC1CCC10E200DBC9F1 /* fitbuddy-model-tests.swift */; };
@@ -54,6 +59,21 @@
 
 /* Begin PBXFileReference section */
 		D61824F01CCC1F5E0065B16C /* FitBuddyCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FitBuddyCommon.xcodeproj; path = FitBuddyCommon/FitBuddyCommon.xcodeproj; sourceTree = "<group>"; };
+		D61824FD1CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = GymBuddyMappingModel1.0.xcmappingmodel; sourceTree = "<group>"; };
+		D61824FE1CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = GymBuddyMappingModel1.1.xcmappingmodel; sourceTree = "<group>"; };
+		D61824FF1CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = GymBuddyMappingModel1.2.xcmappingmodel; sourceTree = "<group>"; };
+		D61825001CCC21180065B16C /* GymBuddyMappingModel1.3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = GymBuddyMappingModel1.3.xcmappingmodel; sourceTree = "<group>"; };
+		D618250E1CCC22690065B16C /* GymBuddyModel0.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel0.0.xcdatamodel; sourceTree = "<group>"; };
+		D618250F1CCC22690065B16C /* GymBuddyModel1. 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "GymBuddyModel1. 4.xcdatamodel"; sourceTree = "<group>"; };
+		D61825101CCC22690065B16C /* GymBuddyModel1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.0.xcdatamodel; sourceTree = "<group>"; };
+		D61825111CCC22690065B16C /* GymBuddyModel1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.1.xcdatamodel; sourceTree = "<group>"; };
+		D61825121CCC22690065B16C /* GymBuddyModel1.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.2.xcdatamodel; sourceTree = "<group>"; };
+		D61825131CCC22690065B16C /* GymBuddyModel1.3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.3.xcdatamodel; sourceTree = "<group>"; };
+		D61825141CCC22690065B16C /* GymBuddyModel1.4.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.4.1.xcdatamodel; sourceTree = "<group>"; };
+		D61825151CCC22690065B16C /* GymBuddyModel1.4.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.4.2.xcdatamodel; sourceTree = "<group>"; };
+		D61825161CCC22690065B16C /* GymBuddyModel1.4.3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.4.3.xcdatamodel; sourceTree = "<group>"; };
+		D61825171CCC22690065B16C /* GymBuddyModel1.4.4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.4.4.xcdatamodel; sourceTree = "<group>"; };
+		D61825181CCC22690065B16C /* GymBuddyModel1.4.5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymBuddyModel1.4.5.xcdatamodel; sourceTree = "<group>"; };
 		D6F368DD1CCC10E200DBC9F1 /* FitBuddyModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FitBuddyModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F368E01CCC10E200DBC9F1 /* fitbuddy-model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fitbuddy-model.h"; sourceTree = "<group>"; };
 		D6F368E21CCC10E200DBC9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +127,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D61824FB1CCC20DC0065B16C /* schema */ = {
+			isa = PBXGroup;
+			children = (
+				D618250D1CCC22690065B16C /* GymBuddyModel.xcdatamodeld */,
+				D61824FD1CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel */,
+				D61824FE1CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel */,
+				D61824FF1CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel */,
+				D61825001CCC21180065B16C /* GymBuddyMappingModel1.3.xcmappingmodel */,
+			);
+			path = schema;
+			sourceTree = "<group>";
+		};
 		D6F368D31CCC10E200DBC9F1 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +162,7 @@
 		D6F368DF1CCC10E200DBC9F1 /* FitBuddyModel */ = {
 			isa = PBXGroup;
 			children = (
+				D61824FB1CCC20DC0065B16C /* schema */,
 				D6F369181CCC12BD00DBC9F1 /* CardioExercise.swift */,
 				D6F369191CCC12BD00DBC9F1 /* CardioHistory.swift */,
 				D6F3691A1CCC12BD00DBC9F1 /* CoreDataArchive.swift */,
@@ -298,8 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61825191CCC22690065B16C /* GymBuddyModel.xcdatamodeld in Sources */,
 				D6F369281CCC12BD00DBC9F1 /* CardioHistory.swift in Sources */,
+				D61825051CCC21180065B16C /* GymBuddyMappingModel1.3.xcmappingmodel in Sources */,
 				D6F369331CCC12BD00DBC9F1 /* ResistanceHistory.swift in Sources */,
+				D61825031CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel in Sources */,
 				D6F369351CCC12BD00DBC9F1 /* WorkoutSequence.swift in Sources */,
 				D6F3692E1CCC12BD00DBC9F1 /* Exercise.swift in Sources */,
 				D6F369341CCC12BD00DBC9F1 /* Workout.swift in Sources */,
@@ -311,6 +347,8 @@
 				D6F369301CCC12BD00DBC9F1 /* LogbookEntry.swift in Sources */,
 				D6F369311CCC12BD00DBC9F1 /* ModelManager.swift in Sources */,
 				D6F369291CCC12BD00DBC9F1 /* CoreDataArchive.swift in Sources */,
+				D61825021CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel in Sources */,
+				D61825041CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel in Sources */,
 				D6F3692D1CCC12BD00DBC9F1 /* CoreDataType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +557,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D618250D1CCC22690065B16C /* GymBuddyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D618250E1CCC22690065B16C /* GymBuddyModel0.0.xcdatamodel */,
+				D618250F1CCC22690065B16C /* GymBuddyModel1. 4.xcdatamodel */,
+				D61825101CCC22690065B16C /* GymBuddyModel1.0.xcdatamodel */,
+				D61825111CCC22690065B16C /* GymBuddyModel1.1.xcdatamodel */,
+				D61825121CCC22690065B16C /* GymBuddyModel1.2.xcdatamodel */,
+				D61825131CCC22690065B16C /* GymBuddyModel1.3.xcdatamodel */,
+				D61825141CCC22690065B16C /* GymBuddyModel1.4.1.xcdatamodel */,
+				D61825151CCC22690065B16C /* GymBuddyModel1.4.2.xcdatamodel */,
+				D61825161CCC22690065B16C /* GymBuddyModel1.4.3.xcdatamodel */,
+				D61825171CCC22690065B16C /* GymBuddyModel1.4.4.xcdatamodel */,
+				D61825181CCC22690065B16C /* GymBuddyModel1.4.5.xcdatamodel */,
+			);
+			currentVersion = D61825161CCC22690065B16C /* GymBuddyModel1.4.3.xcdatamodel */;
+			path = GymBuddyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D6F368D41CCC10E200DBC9F1 /* Project object */;
 }
