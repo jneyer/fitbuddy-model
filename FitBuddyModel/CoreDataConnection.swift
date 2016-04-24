@@ -40,7 +40,7 @@ public class CoreDataConnection : NSObject {
     
     
     lazy public var managedObjectModel: NSManagedObjectModel = {
-        return NSManagedObjectModel(contentsOfURL: NSBundle(identifier: "com.giantrobotlabs.FitBuddy.FitBuddyModel")!.URLForResource("GymBuddyModel", withExtension: "momd")!)!
+        return NSManagedObjectModel(contentsOfURL: NSBundle(identifier: "com.giantrobotlabs.FitBuddyModel")!.URLForResource("GymBuddyModel", withExtension: "momd")!)!
         }()
     
     lazy public var managedObjectContext: NSManagedObjectContext = {

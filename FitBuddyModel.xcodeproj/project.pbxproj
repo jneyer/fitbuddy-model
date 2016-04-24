@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D61824F91CCC1F710065B16C /* FitBuddyCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61824F61CCC1F5E0065B16C /* FitBuddyCommon.framework */; };
+		D61637621CCC749300D5AC03 /* FitBuddyCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61637611CCC749300D5AC03 /* FitBuddyCommon.framework */; };
 		D61825021CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FD1CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel */; };
 		D61825031CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FE1CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel */; };
 		D61825041CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FF1CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel */; };
@@ -58,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D61637611CCC749300D5AC03 /* FitBuddyCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FitBuddyCommon.framework; path = "../FitBuddyCommon/build/Debug-iphoneos/FitBuddyCommon.framework"; sourceTree = "<group>"; };
 		D61824F01CCC1F5E0065B16C /* FitBuddyCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FitBuddyCommon.xcodeproj; path = FitBuddyCommon/FitBuddyCommon.xcodeproj; sourceTree = "<group>"; };
 		D61824FD1CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = GymBuddyMappingModel1.0.xcmappingmodel; sourceTree = "<group>"; };
 		D61824FE1CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = GymBuddyMappingModel1.1.xcmappingmodel; sourceTree = "<group>"; };
@@ -102,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D61824F91CCC1F710065B16C /* FitBuddyCommon.framework in Frameworks */,
+				D61637621CCC749300D5AC03 /* FitBuddyCommon.framework in Frameworks */,
 				D6F3696A1CCC154800DBC9F1 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +196,7 @@
 		D6F369741CCC1A6E00DBC9F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D61637611CCC749300D5AC03 /* FitBuddyCommon.framework */,
 				D6F369691CCC154800DBC9F1 /* CoreData.framework */,
 			);
 			name = Frameworks;
