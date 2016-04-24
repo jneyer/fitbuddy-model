@@ -21,6 +21,9 @@ public class CoreDataModelManager: NSObject, ModelManager {
     
     public func getAllWorkouts() -> [Workout] {
         
+        let mm = CloudKitModelManager(connection: CloudKitConnection.defaultConnection)
+        mm.getAllWorkouts()
+        
         // Create a new fetch request using the LogItem entity
         let fetchRequest = NSFetchRequest(entityName: FBConstants.WORKOUT_TABLE)
         let sortDescriptor = NSSortDescriptor(key: "last_workout", ascending: false)
@@ -172,12 +175,16 @@ public class CoreDataModelManager: NSObject, ModelManager {
         return []
     }
     
-    public func deleteDataObject (nsManagedObject: NSManagedObject) {
+    public func deleteDataObject (nsManagedObject: AnyObject?) {
         
-        coreData!.managedObjectContext.deleteObject(nsManagedObject)
-        save()
-        
-        NSLog("Deleted managed object");
+        if let dataObj = nsManagedObject as? NSManagedObject {
+            coreData!.managedObjectContext.deleteObject(dataObj)
+            save()
+            
+            NSLog("Deleted managed object")
+        }else {
+            NSLog("Did not net an NSManagedObjectModel, \(nsManagedObject)")
+        }
     }
     
     public func save () {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D61637621CCC749300D5AC03 /* FitBuddyCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61637611CCC749300D5AC03 /* FitBuddyCommon.framework */; };
+		D61637661CCCF9F500D5AC03 /* CloudKitConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61637651CCCF9F500D5AC03 /* CloudKitConnection.swift */; };
+		D61637681CCCFAE400D5AC03 /* CloudKitModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61637671CCCFAE400D5AC03 /* CloudKitModelManager.swift */; };
 		D61825021CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FD1CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel */; };
 		D61825031CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FE1CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel */; };
 		D61825041CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D61824FF1CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel */; };
@@ -59,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		D61637611CCC749300D5AC03 /* FitBuddyCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FitBuddyCommon.framework; path = "../FitBuddyCommon/build/Debug-iphoneos/FitBuddyCommon.framework"; sourceTree = "<group>"; };
+		D61637651CCCF9F500D5AC03 /* CloudKitConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitConnection.swift; sourceTree = "<group>"; };
+		D61637671CCCFAE400D5AC03 /* CloudKitModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitModelManager.swift; sourceTree = "<group>"; };
 		D61824F01CCC1F5E0065B16C /* FitBuddyCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FitBuddyCommon.xcodeproj; path = FitBuddyCommon/FitBuddyCommon.xcodeproj; sourceTree = "<group>"; };
 		D61824FD1CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = GymBuddyMappingModel1.0.xcmappingmodel; sourceTree = "<group>"; };
 		D61824FE1CCC21180065B16C /* GymBuddyMappingModel1.1.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = GymBuddyMappingModel1.1.xcmappingmodel; sourceTree = "<group>"; };
@@ -84,10 +88,10 @@
 		D6F369181CCC12BD00DBC9F1 /* CardioExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardioExercise.swift; sourceTree = "<group>"; };
 		D6F369191CCC12BD00DBC9F1 /* CardioHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardioHistory.swift; sourceTree = "<group>"; };
 		D6F3691A1CCC12BD00DBC9F1 /* CoreDataArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataArchive.swift; sourceTree = "<group>"; };
-		D6F3691B1CCC12BD00DBC9F1 /* CoreDataConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataConnection.swift; sourceTree = "<group>"; };
-		D6F3691C1CCC12BD00DBC9F1 /* CoreDataHelper2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper2.swift; sourceTree = "<group>"; };
-		D6F3691D1CCC12BD00DBC9F1 /* CoreDataModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModelManager.swift; sourceTree = "<group>"; };
-		D6F3691E1CCC12BD00DBC9F1 /* CoreDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataType.swift; sourceTree = "<group>"; };
+		D6F3691B1CCC12BD00DBC9F1 /* CoreDataConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataConnection.swift; path = ../CoreDataConnection.swift; sourceTree = "<group>"; };
+		D6F3691C1CCC12BD00DBC9F1 /* CoreDataHelper2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHelper2.swift; path = ../CoreDataHelper2.swift; sourceTree = "<group>"; };
+		D6F3691D1CCC12BD00DBC9F1 /* CoreDataModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataModelManager.swift; path = ../CoreDataModelManager.swift; sourceTree = "<group>"; };
+		D6F3691E1CCC12BD00DBC9F1 /* CoreDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataType.swift; path = ../CoreDataType.swift; sourceTree = "<group>"; };
 		D6F3691F1CCC12BD00DBC9F1 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		D6F369211CCC12BD00DBC9F1 /* LogbookEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookEntry.swift; sourceTree = "<group>"; };
 		D6F369221CCC12BD00DBC9F1 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
@@ -119,6 +123,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D61637691CCCFD4700D5AC03 /* cloudkit */ = {
+			isa = PBXGroup;
+			children = (
+				D61637651CCCF9F500D5AC03 /* CloudKitConnection.swift */,
+				D61637671CCCFAE400D5AC03 /* CloudKitModelManager.swift */,
+			);
+			path = cloudkit;
+			sourceTree = "<group>";
+		};
+		D616376A1CCCFDB800D5AC03 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				D6F3691B1CCC12BD00DBC9F1 /* CoreDataConnection.swift */,
+				D6F3691C1CCC12BD00DBC9F1 /* CoreDataHelper2.swift */,
+				D6F3691D1CCC12BD00DBC9F1 /* CoreDataModelManager.swift */,
+				D6F3691E1CCC12BD00DBC9F1 /* CoreDataType.swift */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
 		D61824F11CCC1F5E0065B16C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,14 +187,12 @@
 		D6F368DF1CCC10E200DBC9F1 /* FitBuddyModel */ = {
 			isa = PBXGroup;
 			children = (
+				D616376A1CCCFDB800D5AC03 /* coredata */,
+				D61637691CCCFD4700D5AC03 /* cloudkit */,
 				D61824FB1CCC20DC0065B16C /* schema */,
 				D6F369181CCC12BD00DBC9F1 /* CardioExercise.swift */,
 				D6F369191CCC12BD00DBC9F1 /* CardioHistory.swift */,
 				D6F3691A1CCC12BD00DBC9F1 /* CoreDataArchive.swift */,
-				D6F3691B1CCC12BD00DBC9F1 /* CoreDataConnection.swift */,
-				D6F3691C1CCC12BD00DBC9F1 /* CoreDataHelper2.swift */,
-				D6F3691D1CCC12BD00DBC9F1 /* CoreDataModelManager.swift */,
-				D6F3691E1CCC12BD00DBC9F1 /* CoreDataType.swift */,
 				D6F3691F1CCC12BD00DBC9F1 /* Exercise.swift */,
 				D6F369211CCC12BD00DBC9F1 /* LogbookEntry.swift */,
 				D6F369221CCC12BD00DBC9F1 /* ModelManager.swift */,
@@ -349,8 +371,10 @@
 				D6F369301CCC12BD00DBC9F1 /* LogbookEntry.swift in Sources */,
 				D6F369311CCC12BD00DBC9F1 /* ModelManager.swift in Sources */,
 				D6F369291CCC12BD00DBC9F1 /* CoreDataArchive.swift in Sources */,
+				D61637681CCCFAE400D5AC03 /* CloudKitModelManager.swift in Sources */,
 				D61825021CCC21180065B16C /* GymBuddyMappingModel1.0.xcmappingmodel in Sources */,
 				D61825041CCC21180065B16C /* GymBuddyMappingModel1.2.xcmappingmodel in Sources */,
+				D61637661CCCF9F500D5AC03 /* CloudKitConnection.swift in Sources */,
 				D6F3692D1CCC12BD00DBC9F1 /* CoreDataType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CoreData
 
 @objc
 public protocol ModelManager {
@@ -16,7 +15,7 @@ public protocol ModelManager {
     func getWorkoutSequence (workout: Workout) -> [WorkoutSequence]
     func newLogbookEntryFromWorkoutSequence (workoutSequence: WorkoutSequence) -> LogbookEntry 
     func getLastWorkoutDate (workout: Workout, withFormat : String?) -> String
-    func deleteDataObject (nsManagedObject: NSManagedObject)
+    func deleteDataObject (nsManagedObject: AnyObject?)
     func getAllLogbookEntries () ->  [LogbookEntry]
     func save ()
     func saveModel(modelObject: AnyObject?)
