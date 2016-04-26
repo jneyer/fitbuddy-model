@@ -10,7 +10,7 @@ import Foundation
 import FitBuddyCommon
 import CoreData
 
-public class CoreDataHelper2: NSObject {
+public class CoreDataHelper: NSObject {
     
     override
     public init() {
@@ -154,7 +154,7 @@ public class CoreDataHelper2: NSObject {
         let cloudStore: NSPersistentStore = CoreDataConnection.defaultConnection.persistentStoreCoordinator.persistentStores.first! as NSPersistentStore
         var groupStoreOptions = CoreDataConnection.defaultConnection.defaultStoreOptions(false)!
         groupStoreOptions[NSPersistentStoreRemoveUbiquitousMetadataOption] = true
-        let groupStore = CoreDataHelper2.coreDataGroupURL()
+        let groupStore = CoreDataHelper.coreDataGroupURL()
         
         var error : NSError? = nil
 

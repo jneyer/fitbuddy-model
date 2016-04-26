@@ -11,7 +11,6 @@ import CloudKit
 import FitBuddyCommon
 import CoreData
 
-@objc
 public class CloudKitModelManager : NSObject, ModelManager {
     
     var cloudKit: CloudKitConnection?
@@ -22,7 +21,8 @@ public class CloudKitModelManager : NSObject, ModelManager {
     
     public func getAllWorkouts () -> [Workout] {
         
-        return getRecords("Workout", condition: nil) as! [Workout]
+        NSLog("getAllWorkouts() not implemented")
+        return []
     }
     
     public func getWorkoutSequence (workout: Workout) -> [WorkoutSequence] {
@@ -58,9 +58,7 @@ public class CloudKitModelManager : NSObject, ModelManager {
     }
     
     public func deleteDataObject (modelObject: AnyObject?) {
-        
-        
-        
+        self.deleteRecord(modelObject)
     }
     
     public func save () {
@@ -103,9 +101,13 @@ public class CloudKitModelManager : NSObject, ModelManager {
     }
 
 
-    func getRecords (recordType: String, condition: NSPredicate?) -> [AnyObject] {
+    public func getRecords (recordType: String, condition: NSPredicate?, delegate: CloudKitOperationDelegate) -> [AnyObject] {
+        let firstFetch = CKFetchRecordsOperation()
+        let secondFetch = CKFetchRecordsOperation()
+        secondFetch.addDependency(firstFetch)
         
         var search = condition
+        let records : [AnyObject] = []
         
         if search == nil {
             search = NSPredicate(value: true)
@@ -120,10 +122,15 @@ public class CloudKitModelManager : NSObject, ModelManager {
                     NSLog("Cloud access error: \(error)")
                 }
             } else {
-                
                 if results!.count > 0 {
                     NSLog("Found \(results!.count) records")
-
+                    for result in results! as [CKRecord] {
+                        self.cloudKit?.privateDB.deleteRecordWithID(result.recordID, completionHandler: ({ result, error in
+                            if error != nil {
+                                NSLog("Error deleting record \(result?.recordName)")
+                            }
+                        }))
+                    }
                 } else {
                     NSLog("No records found")
                 }
@@ -133,13 +140,24 @@ public class CloudKitModelManager : NSObject, ModelManager {
             
         }))
         
-        return []
+        return records
     }
     
-    func getRecord () -> AnyObject? {
+    public func getRecord (recordId: CKRecordID) -> AnyObject? {
         
         
         return nil
+    }
+    
+    public func deleteRecord (record: AnyObject?) {
+        
+        if let recordType = record as? CKRecord {
+            self.cloudKit?.privateDB.deleteRecordWithID((record?.recordID)!, completionHandler: ({ results, error in
+                if error != nil {
+                    NSLog("Error deleting record \(record?.identifier)")
+                }
+            }))
+        }
     }
     
 }

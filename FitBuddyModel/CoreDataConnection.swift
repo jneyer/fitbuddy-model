@@ -30,12 +30,12 @@ public class CoreDataConnection : NSObject {
     }
     
     lazy public var theLocalStore: NSURL = {
-        return CoreDataHelper2.coreDataLocalURL()
+        return CoreDataHelper.coreDataLocalURL()
         }()
     
     
     lazy public var applicationDocumentsDirectory: NSURL = {
-        return CoreDataHelper2.localDocsURL()
+        return CoreDataHelper.localDocsURL()
         }()
     
     
@@ -136,23 +136,23 @@ public class CoreDataConnection : NSObject {
     //This will move files if the group container hasn't been initialized.
     public func setGroupContext () -> Bool {
         
-        if !(NSFileManager.defaultManager().fileExistsAtPath(CoreDataHelper2.coreDataGroupURL().path!)) {
+        if !(NSFileManager.defaultManager().fileExistsAtPath(CoreDataHelper.coreDataGroupURL().path!)) {
             
-            let groupDBDir = CoreDataHelper2.groupDocsURL().URLByAppendingPathComponent("Database")
-            let appDBDir = CoreDataHelper2.localDocsURL().URLByAppendingPathComponent("Database")
+            let groupDBDir = CoreDataHelper.groupDocsURL().URLByAppendingPathComponent("Database")
+            let appDBDir = CoreDataHelper.localDocsURL().URLByAppendingPathComponent("Database")
             
             moveFiles(appDBDir, toDir: groupDBDir)
         }
-        else if NSFileManager.defaultManager().fileExistsAtPath(CoreDataHelper2.coreDataLocalURL().path!) {
+        else if NSFileManager.defaultManager().fileExistsAtPath(CoreDataHelper.coreDataLocalURL().path!) {
             
-            let groupDBPath = CoreDataHelper2.coreDataGroupURL()
-            let appDBPath = CoreDataHelper2.coreDataLocalURL()
+            let groupDBPath = CoreDataHelper.coreDataGroupURL()
+            let appDBPath = CoreDataHelper.coreDataLocalURL()
             
-            CoreDataHelper2.migrateDataStore(appDBPath, sourceStoreType: CoreDataType.LOCAL, destSqliteStore: groupDBPath, destStoreType: CoreDataType.GROUP)
+            CoreDataHelper.migrateDataStore(appDBPath, sourceStoreType: CoreDataType.LOCAL, destSqliteStore: groupDBPath, destStoreType: CoreDataType.GROUP)
         }
         
-        self.applicationDocumentsDirectory = CoreDataHelper2.groupDocsURL()
-        self.theLocalStore = CoreDataHelper2.coreDataGroupURL()
+        self.applicationDocumentsDirectory = CoreDataHelper.groupDocsURL()
+        self.theLocalStore = CoreDataHelper.coreDataGroupURL()
     
         NSLog("Set up group context")
         
@@ -161,30 +161,30 @@ public class CoreDataConnection : NSObject {
 
     public func setUbiquityContext () -> Bool {
         
-        if FitBuddyUtils.isCloudOn() == (CoreDataHelper2.coreDataUbiquityURL() != nil) {
+        if FitBuddyUtils.isCloudOn() == (CoreDataHelper.coreDataUbiquityURL() != nil) {
             //This is good. Cloud settings are in sync
             
             if FitBuddyUtils.isCloudOn() {
                 //Need to set doc locations to device for sync
-                self.applicationDocumentsDirectory = CoreDataHelper2.groupDocsURL()
-                self.theLocalStore = CoreDataHelper2.coreDataUbiquityURL()!
+                self.applicationDocumentsDirectory = CoreDataHelper.groupDocsURL()
+                self.theLocalStore = CoreDataHelper.coreDataUbiquityURL()!
                 
-                FitBuddyUtils.setDefault(FBConstants.kUBIQUITYURLKEY, value: CoreDataHelper2.coreDataUbiquityURL()!.path!)
+                FitBuddyUtils.setDefault(FBConstants.kUBIQUITYURLKEY, value: CoreDataHelper.coreDataUbiquityURL()!.path!)
                 FitBuddyUtils.saveDefaults()
             }
         }
-        else if FitBuddyUtils.isCloudOn() && (CoreDataHelper2.coreDataUbiquityURL() == nil) {
+        else if FitBuddyUtils.isCloudOn() && (CoreDataHelper.coreDataUbiquityURL() == nil) {
             
             //This means iCloud was turned off. Need to rebuild the database and remove ubiquity keys
             NSLog("iCloud turned off. Trying to migrate database to group container.")
             
             let uurl = FitBuddyUtils.getDefault(FBConstants.kUBIQUITYURLKEY)
             
-            CoreDataHelper2.migrateDataStore(NSURL(string: uurl!)!, sourceStoreType: CoreDataType.ICLOUD, destSqliteStore: CoreDataHelper2.coreDataGroupURL(), destStoreType: CoreDataType.GROUP, delete:false)
+            CoreDataHelper.migrateDataStore(NSURL(string: uurl!)!, sourceStoreType: CoreDataType.ICLOUD, destSqliteStore: CoreDataHelper.coreDataGroupURL(), destStoreType: CoreDataType.GROUP, delete:false)
             
             FitBuddyUtils.setCloudOn(false)
         }
-        else if CoreDataHelper2.coreDataUbiquityURL() != nil && !FitBuddyUtils.isCloudOn() {
+        else if CoreDataHelper.coreDataUbiquityURL() != nil && !FitBuddyUtils.isCloudOn() {
             
             //This means iCloud was turned on.
             NSLog("iCloud was turned on but we're leaving data in the group.")

@@ -18,5 +18,8 @@ public class Workout: NSManagedObject {
     @NSManaged public var workout_name: String
     @NSManaged public var exercises: NSOrderedSet
     @NSManaged public var logbookEntries: NSOrderedSet
+    
+    // CloudKit id
+    public var recordId: String?
 
 }

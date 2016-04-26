@@ -10,14 +10,34 @@ import Foundation
 import FitBuddyCommon
 import CoreData
 
-class CoreDataTableControllerS: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
+class CoreDataTableController: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView?
-    var fetchedResultsController: NSFetchedResultsController?
+    
     var debug = false
     var suspendAutomaticTrackingOfChangesInManagedObjectContext = false
     var beganUpdates = false
     
+    var controllerChanged = false
+    
+    var fetchedResultsController : NSFetchedResultsController? {
+        
+        willSet (newfrc) {
+            if newfrc != nil && newfrc != self.fetchedResultsController {
+                controllerChanged = true
+                newfrc!.delegate = self
+            }
+        }
+        
+        didSet {
+            if controllerChanged {
+                self.performFetch()
+                controllerChanged = false
+            } else {
+                self.tableView?.reloadData()
+            }
+        }
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return UITableViewCell()
@@ -49,18 +69,6 @@ class CoreDataTableControllerS: UIViewController, UITableViewDelegate, UITableVi
         
     }
     
-    private func setFetchedResultsController (newfrc: NSFetchedResultsController) {
-        
-        let oldfrc = self.fetchedResultsController
-        
-        if newfrc != oldfrc {
-            self.fetchedResultsController = newfrc
-            newfrc.delegate = self
-            self.performFetch()
-        } else {
-            self.tableView?.reloadData()
-        }
-    }
     
     // UITableViewDataSource Support
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -90,8 +98,10 @@ class CoreDataTableControllerS: UIViewController, UITableViewDelegate, UITableVi
     //NSFetchedControllerDelegate
     func controllerWillChangeContent(controller: NSFetchedResultsController) {
         if (!self.suspendAutomaticTrackingOfChangesInManagedObjectContext) {
-            self.tableView?.beginUpdates()
-            self.beganUpdates = true
+            if let view = self.tableView {
+                view.beginUpdates()
+                self.beganUpdates = true
+            }
         }
     }
     
@@ -116,14 +126,14 @@ class CoreDataTableControllerS: UIViewController, UITableViewDelegate, UITableVi
             switch (type) {
                 
             case NSFetchedResultsChangeType.Insert:
-                self.tableView?.insertRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
+                self.tableView?.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
             case NSFetchedResultsChangeType.Delete:
                 self.tableView?.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
             case NSFetchedResultsChangeType.Update:
                 self.tableView?.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
             case NSFetchedResultsChangeType.Move:
                 self.tableView?.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
-                self.tableView?.insertRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
+                self.tableView?.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
                 
             }
         }
